@@ -1,0 +1,39 @@
+/*Estilos globales*/
+.body{
+    font-family: sans-serif;
+}
+
+/*Paleta de colores*/
+:root{
+    --fondo-color:rgb(239, 240, 175);
+    --card-color:rgb(214, 106, 73);
+    --accents-color:rgb(177, 43, 83);
+}
+
+.background{
+
+}
+
+.card{
+    border-radius: 8px;
+    box-shadow: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.card:hover{
+    background-color: rgb(95, 207, 114);
+}
+
+.accents{
+
+}
+
+.button{
+    background-color: blue;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: blueviolet;
+}

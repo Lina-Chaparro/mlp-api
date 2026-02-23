@@ -1,0 +1,1 @@
+//Exportar clase base: información de cada mlp//
