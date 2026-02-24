@@ -10,16 +10,22 @@ export function showMlp(mlp){
     document.getElementById("mlp-id").textContent = "#" + mlp.id.toString().padStart(3, "0");
 
     //kinds
-    const typesDiv = document.querySelector(".kinds");
-    kindsDiv.innerHTML = "";
-    mlp.kinds.forEach(k => {
+    const kindDiv = document.querySelector(".kind");
+    kindDiv.innerHTML = "";
+    //traigo kind e index
+    mlp.kind.forEach((k, index) => {
         const span = document.createElement("span");
         span.classList.add("kind",k);
         span.textContent = capitalize(k);
-        typesDiv.appendChild(span);
+        kindDiv.appendChild(span);
+
+        //Para agregar / entre kinds omitiendo el ultimo
+        if (index < mlp.kind.length - 1) {
+            kindDiv.append("  ");
+        }
     });
 }
 
 function capitalize(word){
-    return word.chartAt(0).toUpperCase() + word.slice(1);
+    return word.charAt(0).toUpperCase() + word.slice(1);
 }

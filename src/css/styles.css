@@ -3,6 +3,14 @@
     font-family: sans-serif;
 }
 
+/*Para los kinds*/
+.kind.Alicorn { background: rgb(231, 127, 252); }
+.kind.Unicorn { background: blue; }
+.kind.Pegasus { background: skyblue; }
+.kind.Earth { background: green; }
+.kind.Human { background: orange; }
+
+
 /*Paleta de colores*/
 :root{
     --fondo-color:rgb(239, 240, 175);

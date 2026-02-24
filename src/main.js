@@ -4,7 +4,7 @@
 import {fetchMlp} from "./services/api.js";
 import {showMlp} from "./ui/ui.js";
 
-let current = 10;
+let current = 5;
 
 async function loadMlp(id){
     const mlp = await fetchMlp(id);
@@ -15,7 +15,7 @@ loadMlp(current);
 
 document.querySelector("#next").addEventListener("click", () => {
     current++;
-    loadMlp(mlp);
+    loadMlp(current);
 });
 
 document.querySelector("#prev").addEventListener("click", () => {
