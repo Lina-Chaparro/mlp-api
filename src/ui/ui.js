@@ -5,7 +5,10 @@ export function showMlp(mlp){
     if (!mlp) return;
 
     //datos del mlp
+    //imagenes 
     document.getElementById("mlp-img").src = mlp.image;
+    document.getElementById("mlp-bg").src = mlp.image;
+    //nombre y id
     document.getElementById("mlp-name").textContent = capitalize(mlp.name);
     document.getElementById("mlp-id").textContent = "#" + mlp.id.toString().padStart(3, "0");
 

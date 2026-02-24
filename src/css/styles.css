@@ -5,9 +5,9 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center;     /* vertical */
-    background: #0e8f2f;
+    justify-content: center; 
+    align-items: center;   
+    background-color: var(--fondo-color);  
 }
 
 /*Para los kinds*/
@@ -20,9 +20,8 @@ body {
 
 /*Paleta de colores*/
 :root{
-    --fondo-color:rgb(239, 240, 175);
-    --card-color:rgb(214, 106, 73);
-    --accents-color:rgb(177, 43, 83);
+    --fondo-color:rgb(223, 182, 221);
+    --card-color:rgb(180, 146, 172);
 }
 
 
@@ -32,13 +31,46 @@ body {
     box-shadow: 10px;
     padding: 20px;
     transition: background-color 0.3s ease;
+    background-color: var(--card-color);
 }
 .card:hover{
-    background-color: rgb(95, 207, 114);
+    background-color: rgb(158, 109, 146);
 }
 
-.accents{
+.img-container {
+    width: 200px;
+    height: 200px; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#mlp-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*ajusta sin recortar*/
+    filter: blur(25px);
+    transform: scale(1.2);
+}
+
+#mlp-img {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /*ajusta sin recortar*/
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#mlp-name{
+    font-size: medium;
 }
 
 .button{
