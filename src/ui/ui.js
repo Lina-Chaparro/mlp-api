@@ -18,7 +18,7 @@ export function showMlp(mlp){
     //traigo kind e index
     mlp.kind.forEach((k, index) => {
         const span = document.createElement("span");
-        span.classList.add("kind",k);
+        span.classList.add(k);
         span.textContent = capitalize(k);
         kindDiv.appendChild(span);
 
